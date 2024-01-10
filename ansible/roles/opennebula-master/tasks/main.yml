@@ -1,0 +1,14 @@
+- name: Install OpenNebula master dependencies
+  apt:
+    name:
+      - gnupg
+      - wget
+      - lsb-release
+    state: present
+
+- name: Add OpenNebula repository key
+  apt_key:
+    url: https://downloads.opennebula.io/repo/repo.key
+    state: present
+
+# Add more tasks for downloading and setting up the OpenNebula master
