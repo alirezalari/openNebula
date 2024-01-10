@@ -15,27 +15,27 @@ Before you begin, ensure you have the following installed and configured:
 
 .
 ├── README.md
-├── main.tf
-├── variables.tf
-├── provider.tf
-├── data.tf
-├── network.tf
-├── instances.tf
-├── outputs.tf
 ├── ansible
-│ ├── inventory.ini
-│ ├── main.yml
-│ └── roles
-│ ├── opennebula-master
-│ │ └── tasks
-│ │ └── main.yml
-│ └── opennebula-slave
-│ └── tasks
-│ └── main.yml
-└── templates
-├── opennebula_master.tpl
-└── opennebula_slave.tpl
-
+│   ├── inventory.ini
+│   ├── main.yml
+│   └── roles
+│       ├── opennebula-master
+│       │   └── tasks
+│       │       └── main.yml
+│       └── opennebula-slave
+│           └── tasks
+│               └── main.yml
+├── templates
+│   ├── opennebula_master.tpl
+│   └── opennebula_slave.tpl
+└── terraform
+    ├── main.tf
+    ├── variables.tf
+    ├── provider.tf
+    ├── data.tf
+    ├── network.tf
+    ├── instances.tf
+    └── outputs.tf
 
 ## Usage
 
