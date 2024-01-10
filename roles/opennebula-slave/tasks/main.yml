@@ -1,0 +1,9 @@
+- name: Install OpenNebula slave dependencies
+  apt:
+    name:
+      - gnupg
+      - wget
+      - lsb-release
+    state: present
+
+# Add more tasks for setting up the OpenNebula slave

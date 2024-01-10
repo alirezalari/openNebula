@@ -1,0 +1,5 @@
+- hosts: opennebula
+  become: yes
+  roles:
+    - { role: opennebula-master, when: "'master' in group_names" }
+    - { role: opennebula-slave, when: "'slave' in group_names" }
